@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>729242292347-n611psl8bmfvtjj4npsl6hgopl75jrrl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.729242292347-n611psl8bmfvtjj4npsl6hgopl75jrrl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC78b-88XdJwrgbY0FhtPNxTcDhVxes4tg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>729242292347</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>by.kirillFasevich.ShopOnlineUdem</string>
+	<key>PROJECT_ID</key>
+	<string>shoponlineu-46556</string>
+	<key>STORAGE_BUCKET</key>
+	<string>shoponlineu-46556.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:729242292347:ios:bfd9feb70562f8187e12de</string>
+</dict>
+</plist>

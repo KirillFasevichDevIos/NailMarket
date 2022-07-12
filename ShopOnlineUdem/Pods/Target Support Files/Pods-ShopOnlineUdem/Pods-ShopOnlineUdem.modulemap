@@ -1,0 +1,6 @@
+framework module Pods_ShopOnlineUdem {
+  umbrella header "Pods-ShopOnlineUdem-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -58,10 +58,10 @@ class ProfileTableViewController: UITableViewController {
         if MUser.currentUser() != nil {
             
             if MUser.currentUser()!.onBoard {
-                finishRegistrationButtonOutlet.setTitle("Account is Active", for: .normal)
+                finishRegistrationButtonOutlet.setTitle("Аккаунт активен", for: .normal)
                 finishRegistrationButtonOutlet.isEnabled = false
             } else {
-                finishRegistrationButtonOutlet.setTitle("Finish registration", for: .normal)
+                finishRegistrationButtonOutlet.setTitle("Закончите регистрацию", for: .normal)
                 finishRegistrationButtonOutlet.isEnabled = true
                 finishRegistrationButtonOutlet.tintColor = .red
             }

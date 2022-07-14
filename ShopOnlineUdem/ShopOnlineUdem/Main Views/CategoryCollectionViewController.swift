@@ -9,11 +9,12 @@ import UIKit
 
 class CategoryCollectionViewController: UICollectionViewController {
     
+    
     //MARK: Vars
     var categoryArray: [Category] = []
     
-    private let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
-    private let itemsPerRow: CGFloat = 3
+    private let sectionInsets = UIEdgeInsets(top: 10.0, left: 50.0, bottom: 40.0, right: 50.0)
+    private let itemsPerRow: CGFloat = 1
     
     //MARK: View Lifecycle
     

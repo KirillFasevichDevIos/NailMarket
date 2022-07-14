@@ -59,7 +59,7 @@ class BasketViewController: UIViewController {
             
         } else {
             
-            self.hud.textLabel.text = "Please complete you profile!"
+            self.hud.textLabel.text = "Пожалуйста, заполните свой профиль!"
             self.hud.indicatorView = JGProgressHUDErrorIndicatorView()
             self.hud.show(in: self.view)
             self.hud.dismiss(afterDelay: 2.0)
@@ -121,7 +121,7 @@ class BasketViewController: UIViewController {
             totalPrice += item.price
         }
         
-        return "Total price: " + convertToCurrency(totalPrice)
+        return "Итоговая цена: " + convertToCurrency(totalPrice)
     }
     
     private func emptyTheBasket() {
@@ -183,7 +183,7 @@ class BasketViewController: UIViewController {
 
     private func disableCheoutButton() {
         checkOutButtonOutlet.isEnabled = false
-        checkOutButtonOutlet.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
+        checkOutButtonOutlet.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     }
     
     private func removeItemFromBasket(itemId: String) {

@@ -78,9 +78,9 @@ class ProfileTableViewController: UITableViewController {
     
     private func checkLoginStatus() {
         if MUser.currentUser() == nil {
-            createRightBarButton(title: "Login")
+            createRightBarButton(title: "Авторизоваться")
         } else {
-            createRightBarButton(title: "Edit")
+            createRightBarButton(title: "Редактировать")
         }
     }
     
@@ -95,7 +95,7 @@ class ProfileTableViewController: UITableViewController {
     
     @objc func rightBarButtonItemPressed() {
         
-        if editBarButtonOutlet.title == "Login" {
+        if editBarButtonOutlet.title == "Авторизоваться" {
             showLoginView()
         } else {
             goToEditProfile()

@@ -41,7 +41,7 @@ class EditProfileViewController: UIViewController {
             updateCurrentUserInFirestore(withValues: withValues) { (error) in
                 
                 if error == nil {
-                    self.hud.textLabel.text = "Updated!"
+                    self.hud.textLabel.text = "Обновлено!"
                     self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
                     self.hud.show(in: self.view)
                     self.hud.dismiss(afterDelay: 2.0)
@@ -56,7 +56,7 @@ class EditProfileViewController: UIViewController {
             }
             
         } else {
-            hud.textLabel.text = "All fields are required!"
+            hud.textLabel.text = "Все поля обязательны к заполнению!"
             hud.indicatorView = JGProgressHUDErrorIndicatorView()
             hud.show(in: self.view)
             hud.dismiss(afterDelay: 2.0)

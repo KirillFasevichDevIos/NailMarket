@@ -73,7 +73,7 @@ class FinishRegistrationViewController: UIViewController {
         updateCurrentUserInFirestore(withValues: withValues) { (error) in
             
             if error == nil {
-                self.hud.textLabel.text = "Updated!"
+                self.hud.textLabel.text = "Обновлено!"
                 self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
                 self.hud.show(in: self.view)
                 self.hud.dismiss(afterDelay: 2.0)

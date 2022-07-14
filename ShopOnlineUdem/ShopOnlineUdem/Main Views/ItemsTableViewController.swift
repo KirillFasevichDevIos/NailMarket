@@ -96,7 +96,7 @@ class ItemsTableViewController: UITableViewController {
 extension ItemsTableViewController: EmptyDataSetSource, EmptyDataSetDelegate {
     
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        return NSAttributedString(string: "No items to display!")
+        return NSAttributedString(string: "Нет элементов для отображения!")
     }
     
     func image(forEmptyDataSet scrollView: UIScrollView) -> UIImage? {
@@ -104,6 +104,6 @@ extension ItemsTableViewController: EmptyDataSetSource, EmptyDataSetDelegate {
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        return NSAttributedString(string: "Please check back later")
+        return NSAttributedString(string: "Проверьте еще раз")
     }
 }

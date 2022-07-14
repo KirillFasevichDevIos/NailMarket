@@ -78,7 +78,7 @@ class WelcomeViewController: UIViewController {
         if emailTextField.text != "" {
                   resetThePassword()
               } else {
-                  hud.textLabel.text = "Please insert email!"
+                  hud.textLabel.text = "Пожалуйста, введите адрес электронной почты!"
                   hud.indicatorView = JGProgressHUDErrorIndicatorView()
                   hud.show(in: self.view)
                   hud.dismiss(afterDelay: 2.0)
@@ -165,7 +165,7 @@ class WelcomeViewController: UIViewController {
         MUser.resetPasswordFor(email: emailTextField.text!) { (error) in
             
             if error == nil {
-                self.hud.textLabel.text = "Reset password email sent!"
+                self.hud.textLabel.text = "Письмо для сброса пароля отправлено!"
                 self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
                 self.hud.show(in: self.view)
                 self.hud.dismiss(afterDelay: 2.0)

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--Поиск-->
         <scene sceneID="ysR-Ew-kOk">
             <objects>
                 <viewController id="oLW-Zb-I9X" customClass="SearchViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2WU-3z-rH8"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="Ox0-PE-J4n" firstAttribute="leading" secondItem="2WU-3z-rH8" secondAttribute="leading" id="C8C-Sf-eqK"/>
                             <constraint firstItem="Ox0-PE-J4n" firstAttribute="bottom" secondItem="2WU-3z-rH8" secondAttribute="bottom" id="Ctz-fU-lgt"/>
@@ -134,7 +134,7 @@
                             <constraint firstItem="Ox0-PE-J4n" firstAttribute="top" secondItem="2WU-3z-rH8" secondAttribute="top" constant="5" id="SQD-oT-kv7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="QEJ-UI-QZl">
+                    <navigationItem key="navigationItem" title="Поиск" id="QEJ-UI-QZl">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ldy-Vs-ZNZ">
                             <connections>
                                 <action selector="showSearchBarBattonPressed:" destination="oLW-Zb-I9X" id="EG0-VE-RZO"/>
@@ -152,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="2723.1884057971015" y="283.25892857142856"/>
         </scene>
-        <!--Basket-->
+        <!--Корзина-->
         <scene sceneID="IL7-X9-4Ew">
             <objects>
                 <viewController id="hAu-zP-wQH" customClass="BasketViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,7 +249,7 @@
                                     <outlet property="delegate" destination="hAu-zP-wQH" id="pEb-A7-7T9"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items in basket:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Q-oc-b1l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Всего позиций:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Q-oc-b1l">
                                 <rect key="frame" x="16" y="103" width="147" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="NbH-29-b0w"/>
@@ -266,13 +266,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbt-gd-3hE">
                                 <rect key="frame" x="0.0" y="788" width="414" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.59795031009999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="23y-sf-IBz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="CHECK OUT">
+                                <state key="normal" title="Купить">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -281,7 +281,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="boE-MI-29X"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="k1F-FI-d1G" firstAttribute="trailing" secondItem="boE-MI-29X" secondAttribute="trailing" id="7ty-pw-Wwo"/>
                             <constraint firstItem="Bbt-gd-3hE" firstAttribute="trailing" secondItem="boE-MI-29X" secondAttribute="trailing" id="95C-rm-oau"/>
@@ -297,7 +297,7 @@
                             <constraint firstItem="k1F-FI-d1G" firstAttribute="leading" secondItem="boE-MI-29X" secondAttribute="leading" id="yGe-Yg-ckD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Basket" id="6Ww-A7-kJw"/>
+                    <navigationItem key="navigationItem" title="Корзина" id="6Ww-A7-kJw"/>
                     <connections>
                         <outlet property="basketTotalPriceLabel" destination="Ptt-qZ-RR6" id="fXs-vB-0TR"/>
                         <outlet property="checkOutButtonOutlet" destination="Bbt-gd-3hE" id="TP2-KN-I9Y"/>
@@ -310,7 +310,7 @@
             </objects>
             <point key="canvasLocation" x="2721.739130434783" y="968.97321428571422"/>
         </scene>
-        <!--Category-->
+        <!--Каталог-->
         <scene sceneID="COG-cR-VF1">
             <objects>
                 <collectionViewController id="Kl4-nb-CJd" customClass="CategoryCollectionViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -341,8 +341,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Z3-us-ssN">
-                                            <rect key="frame" x="97" y="80" width="200" height="101"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Z3-us-ssN">
+                                            <rect key="frame" x="97" y="70" width="200" height="121"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="101" id="Mi0-OS-1SK"/>
                                                 <constraint firstAttribute="width" constant="200" id="nxp-5T-z5A"/>
@@ -361,7 +361,7 @@
                                         <constraint firstItem="2Z3-us-ssN" firstAttribute="centerX" secondItem="1uU-gU-xc9" secondAttribute="centerX" id="FVr-fk-icD"/>
                                         <constraint firstItem="FHy-Ay-Qet" firstAttribute="leading" secondItem="1uU-gU-xc9" secondAttribute="leading" id="dyQ-Ff-1oW"/>
                                         <constraint firstAttribute="trailing" secondItem="FHy-Ay-Qet" secondAttribute="trailing" id="mxp-9t-BOa"/>
-                                        <constraint firstItem="2Z3-us-ssN" firstAttribute="top" secondItem="1uU-gU-xc9" secondAttribute="top" constant="80" id="q5f-k5-0Hy"/>
+                                        <constraint firstItem="2Z3-us-ssN" firstAttribute="top" secondItem="1uU-gU-xc9" secondAttribute="top" constant="70" id="q5f-k5-0Hy"/>
                                         <constraint firstAttribute="bottom" secondItem="FHy-Ay-Qet" secondAttribute="bottom" id="xcF-r6-8ON"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
@@ -383,7 +383,7 @@
                             <outlet property="delegate" destination="Kl4-nb-CJd" id="zYw-LD-BcG"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Category" id="MSP-Wv-M29"/>
+                    <navigationItem key="navigationItem" title="Каталог" id="MSP-Wv-M29"/>
                     <connections>
                         <segue destination="73v-2S-Ktn" kind="show" identifier="categoryToItemsSeg" id="eVL-UU-FCh"/>
                     </connections>
@@ -478,7 +478,7 @@
             </objects>
             <point key="canvasLocation" x="3628.985507246377" y="-390.40178571428572"/>
         </scene>
-        <!--Add Item-->
+        <!--Добавить позиции-->
         <scene sceneID="SqE-9l-q76">
             <objects>
                 <viewController id="uDY-jj-2L1" customClass="AddItemViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -496,9 +496,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I9D-fB-bee">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Добавьте описание:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I9D-fB-bee">
                                 <rect key="frame" x="20" y="196" width="374" height="128"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="k8s-e0-qds"/>
                                 </constraints>
@@ -508,16 +508,19 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c0-yC-B4r">
                                 <rect key="frame" x="20" y="349" width="90" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="d73-rS-wJz"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ucp-Fk-RBp"/>
                                 </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Camera">
+                                        <fragment content="Камера">
                                             <attributes>
                                                 <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -547,8 +550,8 @@
                             <outletCollection property="gestureRecognizers" destination="fHu-hC-3z4" appends="YES" id="BTc-hh-NbD"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Item" id="ibg-3c-l4y">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="MHE-fA-JFb">
+                    <navigationItem key="navigationItem" title="Добавить позиции" id="ibg-3c-l4y">
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="MHE-fA-JFb">
                             <connections>
                                 <action selector="doneBarButtonItemPressed:" destination="uDY-jj-2L1" id="zdL-0W-SYl"/>
                             </connections>
@@ -619,7 +622,7 @@
                                     <outlet property="delegate" destination="JLa-0O-GX1" id="T7d-XD-2Xi"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i91-rg-l9Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i91-rg-l9Z">
                                 <rect key="frame" x="20" y="252" width="374" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
@@ -697,48 +700,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZk-ax-unH">
-                                <rect key="frame" x="16" y="44" width="382" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизоваться" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZk-ax-unH">
+                                <rect key="frame" x="103" y="44" width="295" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="29P-aN-1oX">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронный адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="29P-aN-1oX">
                                 <rect key="frame" x="16" y="105" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-Dh-bxZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-Dh-bxZ">
                                 <rect key="frame" x="16" y="163" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPd-bC-V3K">
-                                <rect key="frame" x="16" y="214" width="75" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.59795031009999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="214" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Vst-az-aSi"/>
+                                    <constraint firstAttribute="width" constant="100" id="Vst-az-aSi">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="Nni-xT-jcM" eventType="touchUpInside" id="hNp-ut-Xtv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NY-Wp-Euk">
-                                <rect key="frame" x="323" y="214" width="75" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.59795031009999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="298" y="214" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Qa6-lZ-dPn"/>
+                                    <constraint firstAttribute="width" constant="100" id="Qa6-lZ-dPn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Регистрация">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="Nni-xT-jcM" eventType="touchUpInside" id="W1N-5o-EUH"/>
                                 </connections>
@@ -750,8 +769,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Отмена">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="cancelButtonPressed:" destination="Nni-xT-jcM" eventType="touchUpInside" id="LlG-Nd-JEJ"/>
@@ -765,7 +784,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Resend Email">
+                                <state key="normal" title="Письмо на Email">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -773,16 +792,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTc-L0-3Sk">
-                                <rect key="frame" x="135" y="395" width="144" height="30"/>
+                                <rect key="frame" x="122" y="395" width="170" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4Nh-sJ-ePC"/>
-                                    <constraint firstAttribute="width" constant="144" id="zRr-Ib-kH0"/>
+                                    <constraint firstAttribute="width" constant="170" id="zRr-Ib-kH0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Forgot Pasword">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.59795031009999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Восстановить пароль">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPasswordButtonPressed:" destination="Nni-xT-jcM" eventType="touchUpInside" id="dfz-UL-pXA"/>
@@ -797,12 +816,12 @@
                             <constraint firstItem="8am-70-ch0" firstAttribute="centerX" secondItem="UB0-3t-MZQ" secondAttribute="centerX" id="69N-r9-mvj"/>
                             <constraint firstItem="X0b-q9-9vx" firstAttribute="leading" secondItem="hMx-CK-Yxq" secondAttribute="leading" constant="16" id="9iW-mA-QcM"/>
                             <constraint firstItem="ZZk-ax-unH" firstAttribute="top" secondItem="hMx-CK-Yxq" secondAttribute="top" id="M5l-Oq-UjC"/>
-                            <constraint firstItem="wTc-L0-3Sk" firstAttribute="leading" secondItem="8am-70-ch0" secondAttribute="leading" id="Pgm-Rj-pgz"/>
+                            <constraint firstItem="wTc-L0-3Sk" firstAttribute="leading" secondItem="8am-70-ch0" secondAttribute="leading" constant="-13" id="Pgm-Rj-pgz"/>
                             <constraint firstItem="kWx-Dh-bxZ" firstAttribute="top" secondItem="29P-aN-1oX" secondAttribute="bottom" constant="24" id="Udo-H6-ER3"/>
                             <constraint firstItem="8am-70-ch0" firstAttribute="centerY" secondItem="UB0-3t-MZQ" secondAttribute="centerY" id="aMf-jt-Ixl"/>
                             <constraint firstItem="hMx-CK-Yxq" firstAttribute="trailing" secondItem="kWx-Dh-bxZ" secondAttribute="trailing" constant="16" id="dmK-Zh-Igq"/>
                             <constraint firstItem="hMx-CK-Yxq" firstAttribute="trailing" secondItem="8NY-Wp-Euk" secondAttribute="trailing" constant="16" id="eUW-6e-dlF"/>
-                            <constraint firstItem="ZZk-ax-unH" firstAttribute="leading" secondItem="hMx-CK-Yxq" secondAttribute="leading" constant="16" id="gBk-11-scJ"/>
+                            <constraint firstItem="ZZk-ax-unH" firstAttribute="leading" secondItem="hMx-CK-Yxq" secondAttribute="leading" constant="103" id="gBk-11-scJ"/>
                             <constraint firstItem="zPd-bC-V3K" firstAttribute="leading" secondItem="hMx-CK-Yxq" secondAttribute="leading" constant="16" id="gan-dn-N8d"/>
                             <constraint firstItem="hMx-CK-Yxq" firstAttribute="trailing" secondItem="ZZk-ax-unH" secondAttribute="trailing" constant="16" id="gcF-zv-1q9"/>
                             <constraint firstItem="X0b-q9-9vx" firstAttribute="top" secondItem="hMx-CK-Yxq" secondAttribute="top" id="juZ-mu-E4V"/>
@@ -843,11 +862,11 @@
             </objects>
             <point key="canvasLocation" x="806" y="631"/>
         </scene>
-        <!--Category-->
+        <!--Каталог-->
         <scene sceneID="WDv-JH-A4x">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUw-SQ-ufV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Category" image="homeIcon" id="YzJ-TW-F6Z"/>
+                    <tabBarItem key="tabBarItem" title="Каталог" image="homeIcon" id="YzJ-TW-F6Z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lgc-RP-sbx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -862,7 +881,7 @@
             </objects>
             <point key="canvasLocation" x="1811.594202898551" y="-390.40178571428572"/>
         </scene>
-        <!--Profile-->
+        <!--Профиль-->
         <scene sceneID="fAd-Wk-K1F">
             <objects>
                 <tableViewController id="s7A-Ws-WgW" customClass="ProfileTableViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -947,7 +966,7 @@
                             <outlet property="delegate" destination="s7A-Ws-WgW" id="DNe-GE-ZQx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Profile" id="gws-os-4YZ"/>
+                    <navigationItem key="navigationItem" title="Профиль" id="gws-os-4YZ"/>
                     <connections>
                         <outlet property="finishRegistrationButtonOutlet" destination="avV-Id-K5F" id="sGt-0U-c2I"/>
                         <outlet property="purchaseHistoryButtonOutlet" destination="VuF-J4-tXk" id="OaQ-3F-VSb"/>
@@ -958,7 +977,7 @@
             </objects>
             <point key="canvasLocation" x="2721.739130434783" y="1786.6071428571427"/>
         </scene>
-        <!--Purchased items-->
+        <!--Купленные товары-->
         <scene sceneID="SZe-Vh-y3d">
             <objects>
                 <tableViewController id="bKH-Fx-bbn" customClass="PurchasedHistoryTableViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -1032,7 +1051,7 @@
                             <outlet property="delegate" destination="bKH-Fx-bbn" id="4sM-km-sxv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Purchased items" id="O82-0T-CKn"/>
+                    <navigationItem key="navigationItem" title="Купленные товары" id="O82-0T-CKn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WxL-Ie-V4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1046,7 +1065,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUt-Gk-c23">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUt-Gk-c23">
                                 <rect key="frame" x="20" y="20" width="374" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="u5l-xD-jUZ"/>
@@ -1070,17 +1089,17 @@
                                     <action selector="cancelButtonPressed:" destination="yfp-ee-zRa" eventType="touchUpInside" id="GFB-mc-rr5"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40P-XJ-o74">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40P-XJ-o74">
                                 <rect key="frame" x="20" y="98" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surename" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-hO-W2e">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-hO-W2e">
                                 <rect key="frame" x="20" y="155" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vz-99-Cec">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vz-99-Cec">
                                 <rect key="frame" x="20" y="218" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1089,7 +1108,7 @@
                                 <rect key="frame" x="16" y="266" width="378" height="28.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Done">
+                                <buttonConfiguration key="configuration" style="plain" title="Готово">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -1132,7 +1151,7 @@
             </objects>
             <point key="canvasLocation" x="3573.913043478261" y="2201.7857142857142"/>
         </scene>
-        <!--Edit Profile-->
+        <!--Редактировать профиль-->
         <scene sceneID="8NZ-h9-Fiv">
             <objects>
                 <viewController id="Rfa-8K-gV8" customClass="EditProfileViewController" customModule="ShopOnlineUdem" customModuleProvider="target" sceneMemberID="viewController">
@@ -1140,17 +1159,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-4W-mnp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-4W-mnp">
                                 <rect key="frame" x="16" y="111" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surename" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-gB-gz8">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-gB-gz8">
                                 <rect key="frame" x="16" y="168" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTA-EE-BG4">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTA-EE-BG4">
                                 <rect key="frame" x="16" y="226" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1160,7 +1179,7 @@
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Log Out">
+                                <state key="normal" title="Выйти с аккаунта">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1186,9 +1205,9 @@
                             <constraint firstItem="Cmb-4W-mnp" firstAttribute="leading" secondItem="9AA-0K-WDI" secondAttribute="leading" constant="16" id="zMs-5S-tcj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Profile" id="bVF-3U-F5t">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oKa-aB-8w8">
-                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.59795031009999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <navigationItem key="navigationItem" title="Редактировать профиль" id="bVF-3U-F5t">
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="oKa-aB-8w8">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="saveBarButtonPressed:" destination="Rfa-8K-gV8" id="Jj2-q2-1Qe"/>
                             </connections>
@@ -1204,11 +1223,11 @@
             </objects>
             <point key="canvasLocation" x="4507.2463768115949" y="2201.7857142857142"/>
         </scene>
-        <!--Basket-->
+        <!--Корзина-->
         <scene sceneID="6ol-dT-mvx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TvJ-ZR-2MT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Basket" image="basket" id="GEW-os-AW3"/>
+                    <tabBarItem key="tabBarItem" title="Корзина" image="basket" id="GEW-os-AW3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rg2-3F-xKG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1223,11 +1242,11 @@
             </objects>
             <point key="canvasLocation" x="1811.594202898551" y="968.97321428571422"/>
         </scene>
-        <!--Profile-->
+        <!--Профиль-->
         <scene sceneID="XMe-yi-iFt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3qF-91-cpl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="PfF-Iq-IG0"/>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="profile" id="PfF-Iq-IG0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FvR-VV-jHW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1242,11 +1261,11 @@
             </objects>
             <point key="canvasLocation" x="1811.594202898551" y="1786.6071428571427"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Поиск-->
         <scene sceneID="3Qw-ki-VsF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NQp-G8-feX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="hsZ-ER-sQG"/>
+                    <tabBarItem key="tabBarItem" title="Поиск" image="magnifyingglass" catalog="system" id="hsZ-ER-sQG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Wg-Cl-Jg9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1266,18 +1285,13 @@
         <image name="basket" width="30" height="30"/>
         <image name="homeIcon" width="30" height="30"/>
         <image name="imagePlaceholder" width="150" height="113.5"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="profile" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
